@@ -18,12 +18,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="launch_image" translatesAutoresizingMaskIntoConstraints="NO" id="enu-e4-BKY">
-                                <rect key="frame" x="116" y="267" width="142" height="133"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" image="launch_image" translatesAutoresizingMaskIntoConstraints="NO" id="enu-e4-BKY">
+                                <rect key="frame" x="116" y="240" width="142" height="133"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="F l i x" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlL-4f-kSL">
+                                <rect key="frame" x="128" y="395" width="118" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="qYt-yM-ZWu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="57"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="enu-e4-BKY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="116" id="6DA-ga-CDo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jlL-4f-kSL" secondAttribute="bottom" constant="203" id="L5M-KO-0r6"/>
+                            <constraint firstItem="enu-e4-BKY" firstAttribute="centerX" secondItem="jlL-4f-kSL" secondAttribute="centerX" id="SJD-tS-EtO"/>
+                            <constraint firstItem="jlL-4f-kSL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="128" id="Xdm-pV-41O"/>
+                            <constraint firstItem="enu-e4-BKY" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="eZj-6v-OQi"/>
+                            <constraint firstItem="jlL-4f-kSL" firstAttribute="top" secondItem="enu-e4-BKY" secondAttribute="bottom" constant="22" id="ikc-VR-DIF"/>
+                            <constraint firstItem="enu-e4-BKY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="220" id="wu7-bo-kcD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
